@@ -1,0 +1,221 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register IPO Details</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="brand">
+                <img src="assets/bluestock-fintech-logo.png" alt="Bluestock Fintech" class="logo">
+                <span>Bluestock Fintech</span>
+            </div>
+
+            <nav class="nav-menu">
+                <div class="menu-section">
+                    <span class="menu-label">MENU</span>
+                    <ul>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-dashboard.png" alt="">Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><img class="sidebar-icon" src="assets/grey-cart.png" alt="">Manage IPO</a>
+                        </li>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-file.png" alt="">IPO Subscription</a>
+                        </li>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-dm.png" alt="">IPO Allotment</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <span class="menu-label">OTHERS</span>
+                    <ul>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-setting.png" alt="">Settings</a></li>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-wallet.png" alt="">API Manager</a>
+                        </li>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-profile.png" alt="">Accounts</a></li>
+                        <li><a href="#"><img class="sidebar-icon" src="assets/grey-letter-i.png" alt="">Help</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Header -->
+            <header class="top-header">
+                <div class="search-container">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <img src="assets/search.png" alt="Search" class="search-icon">
+                </div>
+
+                <div class="header-right">
+                    <div class="user-profile">
+                        <!-- <img src="assets/profile.svg" alt="Profile" class="profile-pic"> -->
+                        <div class="profile-circle"><p></p></div> 
+                        <span>Hi, Vishal</span>
+                        <img src="assets/arrow-down-sign-to-navigate.png" alt="Menu" class="menu-icon">
+                    </div>
+
+                    <img src="assets/notification.png" alt="Notifications" class="notification-icon">
+                    <!-- <img src="assets/new-notification.png" alt="Notifications" class="notification-sign"> -->
+
+                </div>
+            </header>
+
+            <div class="horizontal-line"></div>
+
+            <!-- Page Content -->
+            <div class="page-content">
+                <!-- Page Header -->
+                <div class="page-header">
+                    <div class="title-section">
+                        <h1>Upcomming IPO Information</h1>
+                        <p>Manage your IPO Details</p>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn btn-primary">Register</button>
+                        <button class="btn btn-outline">Cancel</button>
+                    </div>
+                </div>
+                <div class="form-cells">
+                    <!-- Tabs -->
+                    <aside class="tabs-container">
+                        <div class="tab active">
+                            <img src="assets/grey-tab-i-icon.png" alt="">
+                            IPO Information
+                        </div>
+                        <div class="tab">
+                            <img src="assets/tab-info.png" alt="">
+                            IPO Info
+                        </div>
+                    </aside>
+
+                    <!-- Form Section -->
+                    <div class="form-container">
+                        <div class="form-header">
+                            <h2>IPO Information</h2>
+                            <p>Enter IPO Details</p>
+                        </div>
+
+                        <form id="ipoForm">
+                            <!-- Company Logo Section -->
+                            <div class="logo-section">
+                                <label>Company Logo</label>
+                                <div class="logo-content">
+                                    <img src="assets/Rectangle.png" alt="NSE India" class="company-logo">
+                                    <div class="logo-details">
+                                        <h3>NSE India</h3>
+                                        <p class="subtitle">Tech Lead</p>
+                                        <p class="location">Pune</p>
+                                    </div>
+                                    <div class="logo-actions">
+                                        <button type="button" class="btn btn-primary">Upload Logo</button>
+                                        <button type="button" class="btn btn-outline">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Form Grid -->
+                            <div class="form-grid">
+                                <!-- Company Details -->
+                                <div class="form-group">
+                                    <label>Company Name</label>
+                                    <input type="text" placeholder="Vodafone Idea">
+                                </div>
+                                <div class="form-group">
+                                    <label>Price Band</label>
+                                    <input type="text" placeholder="Not Issued">
+                                </div>
+                                <div class="form-group">
+                                    <label>Open</label>
+                                    <input type="text" placeholder="Not Issued">
+                                </div>
+                                <div class="form-group">
+                                    <label>Close</label>
+                                    <input type="text" placeholder="Not Issued">
+                                </div>
+                                <div class="form-group">
+                                    <label>Issue Size</label>
+                                    <input type="text" placeholder="2300 Cr.">
+                                </div>
+                                <div class="form-group">
+                                    <label>Issue Type</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label>LISTING DATE</label>
+                                    <input type="text" placeholder="Not Issued">
+                                </div>
+                                <div class="form-group">
+                                    <label>Status</label>
+                                    <select>
+                                        <option value="">Select</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Listed IPO Details -->
+                            <div class="listed-details">
+                                <h3>NEW LISTED IPO DETAILS (WHEN IPO GET LISTED)</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label>IPO PRICE</label>
+                                        <input type="text" placeholder="₹ 383">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>LISTING PRICE</label>
+                                        <input type="text" placeholder="₹ 435">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>LISTING GAIN</label>
+                                        <input type="text" placeholder="13.58 %">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>LISTING DATE</label>
+                                        <input type="text" placeholder="2024-05-30">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CMP</label>
+                                        <input type="text" placeholder="₹410">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>CURRENT RETURN</label>
+                                        <input type="text" placeholder="7.05 %">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>RHP</label>
+                                        <input type="text" placeholder="Enter RHP PDF Link">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>DRHP</label>
+                                        <input type="text" placeholder="Enter DRHP PDF Link">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
